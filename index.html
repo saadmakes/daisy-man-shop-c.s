@@ -39,15 +39,15 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
                             </svg>
-                            <span class="badge badge-sm indicator-item">8</span>
+                            <span class="badge badge-sm indicator-item">0</span>
                         </div>
                     </label>
                     <div tabindex="0" class="mt-3 z-[1] card card-compact dropdown-content w-52 bg-base-100 shadow">
                         <div class="card-body">
-                            <span class="font-bold text-lg">8 Items</span>
-                            <span class="text-info">Subtotal: $999</span>
+                            <span class="font-bold text-lg">0 Items</span>
+                            <span class="text-info">Subtotal: $0</span>
                             <div class="card-actions">
-                                <button class="btn btn-primary btn-block">View cart</button>
+                                <button class="btn btn-block">View cart</button>
                             </div>
                         </div>
                     </div>
@@ -86,7 +86,8 @@
                             DaisyMan</h1>
                         <p class="mb-5">At DaisyMan, we believe that style is a reflection of your unique personality
                             and our mission is to provide you with a diverse and trendy collection.</p>
-                        <button class="btn">Shop Now</button>
+                            <form method="get" action="#categories">
+                            <button class="btn">Shop Now</button></form>
                     </div>
                 </div>
             </div>
@@ -96,7 +97,7 @@
         <!-- categories section -->
         <section class="mx-8 md:mx-16 lg:mx-24 py-5 my-10">
             <div class="text-center mb-10">
-                <h1 class="text-4xl font-bold">Huge Collection</h1>
+                <h1 class="text-4xl font-bold" id="categories">Huge Collection</h1>
                 <p class="text-sm font-medium">Browse from a various collections</p>
             </div>
             <!-- cards -->
@@ -133,6 +134,18 @@
                             <button class="btn">Buy Now</button>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+        <!-- featured section -->
+        <section class="mx-8 md:mx-16 lg:mx-24 py-5 my-10">
+            <div class="flex flex-col md:flex-row gap-10 items-center">
+                <div class="flex-1">
+                    <h1 class="text-3xl md:text-4xl mb-3 font-medium">Easy Purchase</h1>
+                    <p class="font-medium text-sm md:text-base">Hakuna Matata! <br> We accept all types of Cards which makes your shopping more seamless.</p>
+                </div>
+                <div class="flex-1">
+                    <img src="./images/easy-purchase.avif" alt="">
                 </div>
             </div>
         </section>
