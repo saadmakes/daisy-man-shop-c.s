@@ -1,25 +1,37 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="cmyk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
-    <title>DaisyMan</title>
+    <title>DaisyMan | Your one-stop destination for all your fashion needs</title>
     <!-- daisyui and tailwind cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.3/dist/full.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
+<!-- tailwind config customization -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          backgroundImage:{
+            'hero-bg':"url('./images/pexels-mnz-1670770.jpg')"
+          }
+        }
+      }
+    }
+  </script>
 </head>
 <body>
     <header>
         <!-- navbar -->
-        <nav class="navbar bg-base-100">
+        <nav class="navbar bg-black">
             <div class="flex-1">
-              <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+              <a class="btn btn-ghost normal-case text-xl text-white">DaisyMan</a>
             </div>
             <div class="flex-none">
               <div class="dropdown dropdown-end">
                 <label tabindex="0" class="btn btn-ghost btn-circle">
-                  <div class="indicator">
+                  <div class="indicator text-white">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
                     <span class="badge badge-sm indicator-item">8</span>
                   </div>
@@ -36,7 +48,7 @@
               </div>
               <div class="dropdown dropdown-end">
                 <label tabindex="0" class="btn btn-ghost btn-circle avatar">
-                  <div class="w-10 rounded-full">
+                  <div class="w-10 rounded-full bg-white">
                     <img src="./images/avatar.png" />
                   </div>
                 </label>
@@ -53,6 +65,24 @@
               </div>
             </div>
         </nav>
+
+        <!-- hero section -->
+
+        <section>
+            <div class="hero min-h-[calc(100vh-66px)] bg-hero-bg">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content text-center text-neutral-content">
+                  <div class="max-w-md">
+                    <h1 class="mb-5 text-5xl font-bold">
+                        Welcome <br>
+                        to <br>
+                        DaisyMan</h1>
+                    <p class="mb-5">At DaisyMan, we believe that style is a reflection of your unique personality and our mission is to provide you with a diverse and trendy collection.</p>
+                    <button class="btn btn-primary">Shop Now</button>
+                  </div>
+                </div>
+              </div>
+        </section>
     </header>
 </body>
 </html>
